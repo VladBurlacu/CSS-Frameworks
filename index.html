@@ -102,7 +102,8 @@
                                 <h5 class="card-title text-center">Ultra Instinct!</h5>
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                 <hr class="w-50">
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" class="btn btn-primary" aria-describedby="tooltip">Learn more</a>
+                                <div id="tooltip" role="tooltip">My tooltip</div>
                             </div>
                         </div>
                     </div>
@@ -113,7 +114,7 @@
                                 <h5 class="card-title text-center">Ultra Instinct!</h5>
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                 <hr class="w-50">
-                                <a href="#" class="btn btn-primary " >Go somewhere</a>
+                                <a href="#" class="btn btn-primary ">Learn more</a>
                             </div>
                         </div>
                     </div>
@@ -124,7 +125,7 @@
                                 <h5 class="card-title text-center">Ultra Instinct!</h5>
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                 <hr class="w-50">
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" class="btn btn-primary">Learn more</a>
                             </div>
                         </div>
                     </div>
@@ -135,7 +136,7 @@
                                 <h5 class="card-title text-center">Ultra Instinct!</h5>
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                 <hr class="w-50">
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" class="btn btn-primary">Learn more</a>
                             </div>
                         </div>
                     </div>
@@ -149,7 +150,7 @@
                                 <h5 class="card-title text-center">Ultra Instinct!</h5>
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                 <hr class="w-50">
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" class="btn btn-primary">Learn more</a>
                             </div>
                         </div>
                     </div>
@@ -160,7 +161,7 @@
                                 <h5 class="card-title text-center">Ultra Instinct!</h5>
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                 <hr class="w-50">
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" class="btn btn-primary">Learn more</a>
                             </div>
                         </div>
                     </div>
@@ -171,7 +172,7 @@
                                 <h5 class="card-title text-center">Ultra Instinct!</h5>
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                 <hr class="w-50">
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" class="btn btn-primary">Learn more</a>
                             </div>
                         </div>
                     </div>
@@ -182,17 +183,23 @@
                                 <h5 class="card-title text-center">Ultra Instinct!</h5>
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                 <hr class="w-50">
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <a href="#" class="btn btn-primary">Learn more</a>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
 </div>
+
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script>
+    const button = document.querySelector('#btn');
+    const tooltip = document.querySelector('#tooltip');
+
+    const popperInstance = Popper.createPopper(button, tooltip);
+</script>
 
 </body>
 </html>
